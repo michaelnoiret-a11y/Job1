@@ -1,0 +1,14 @@
+""" Écrire un programme qui crée une liste nommée « L » d’au moins 5 entiers 
+puis successivement : 
+➔ Afficher la deuxième valeur de la liste 
+➔ Écrire une fonction qui remplace L[3] par la somme des cases voisines 
+L[2] & L[4], puis afficher à nouveau le tableau. 
+➔ Puis afficher la dernière valeur de la liste. """
+fruits = [1, 2, 3, 4, 5]
+def returnlist (fruits) :
+    print(fruits[1])
+    fruits.insert(2,fruits[2] + fruits[3])
+    print(fruits)
+    print(fruits[4])
+
+returnlist(fruits)
